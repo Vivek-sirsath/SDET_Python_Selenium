@@ -21,7 +21,7 @@ print("SauceDemo opened..")
 driver.find_element(By.ID, "user-name").send_keys("standard_user")
 print("Username entered...")
 
-time.sleep(2)
+time.sleep(3)
 
 # Locate password field and enter password
 driver.find_element(By.ID,"password").send_keys("secret_sauce")
