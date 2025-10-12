@@ -219,6 +219,12 @@ print("=========================================================================
 
 # How we can create reusable code using function?
 
+Difference between FUNCTION and METHOD
+--------------------------------------
+> A function having 'self' called method
+ e.g.  def check(self)   -->  Methodd
+       def check(*args, **kwargs )   --> Function
+
 from datetime import datetime
 
 # print("This is the current date and time:")
@@ -281,6 +287,8 @@ print(bmw.color , bmw.horsepower)
 print("=============================================================================")
 
 # Methods
+---------
+
 class Car:
     def __init__(self, brand: str , hp: int):
         self.brand = brand
@@ -302,7 +310,7 @@ ford.drive()
 ford.get_info(50)
 
 
-=======================================================================================================================================================
+######################################################################################################################################################
 
 
 
@@ -336,12 +344,12 @@ ford.get_info(50)
 
                                                        Data Types
                                                             |
-         ------------------------------------------------------------------------------------------------------------------
-         |                |                    |                   |                |                  |                  |
-   Numeric Type       Sequence Type        Mapping Type          Boolean          Set Type         Binary Type         None Type
-      - int            - str               - dict              - bool            - set             - bytes            - None
-      - float          - list                                                    - frozenset       - bytearray
-      - complex no.    - tuple                                                                     - memory view
+         -----------------------------------------------------------------------------------------------------------------
+         |                |                    |                  |                |                  |                  |
+   Numeric Type       Sequence Type        Mapping Type        Boolean          Set Type         Binary Type         None Type
+      - int            - str               - dict              - bool           - set             - bytes            - None
+      - float          - list                                                   - frozenset       - bytearray
+      - complex no.    - tuple                                                                    - memory view
 
 
 ######################################################################################################################################################
@@ -364,7 +372,8 @@ Type casting :-
 - For this, different functions are available.
   int(), float(), complex(), bool(), str()
 
-- If we want to convert str to int, compulsory str should contain only integral value and should be specified in base-10.
+- If we want to convert str to int, compulsory str should contain only integral value and
+should be specified in base-10 number system.
 
 ######################################################################################################################################################
 
@@ -376,16 +385,18 @@ e.g.
      \r --> Carriage return
      \b --> Back space
      \f --> Form feed
-     \V --> Vertical tab
+     \v --> Vertical tab
      \' --> Single quote
      \" --> Double quote
-     \\ --> ack slash symbol
+     \\ --> back-slash symbol
 
+######################################################################################################################################################
 
 # Constants :-
 
 Python does not have a built-in concept of constants.
-By convention, uppercase characters are used for variables that should not change, but their values can still be modified in Python.
+By convention, uppercase characters are used for variables that should not change, but their values
+can still be modified in Python.
 
        PI = 3.14
 

@@ -8,12 +8,12 @@ f1 = open("IMG.jpg","rb")
 # This returns the data in console in Hexadecimal format. Understandable by Computer.
 
 # Save the 'f1' file in a variable after reading
-x = f1.read()
+bytes = f1.read()
 
 f2 = open("IMG_NEW.jpg","wb")   # This will create New file if not exist.
 
 # Write the data from 'f1' to 'f2'
-f2.write(x)
+f2.write(bytes)
 
 f1.close()
 f2.close()

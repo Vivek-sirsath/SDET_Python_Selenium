@@ -2,7 +2,7 @@ DICTIONARY DATA STRUCTURE
 -------------------------
 
 LIST, TUPLE , SET --> Represent individual objects as a single unit.
-DICTIONARY --> Key-Value pair individual objects.
+DICTIONARY --> Key-Value pair are the individual objects in Dictionary Data Structure.
 
 - Duplicate keys not allowed. Keys are unique in Dictionary.
 - Duplicate values allowed
@@ -52,26 +52,30 @@ OPERATIONS ON DICTIONARY
 
 d = {10: 'apple', 20: 'banana', 30: 'mango', 40: 'orange'}
 
+print("======================== RETRIEVE DATA FROM DICTIONARY ========================")
+
 print(d[30])  # mango
+print(d.get(40))   # orange
 # print(d[90])  # KeyError: 90
 
-print("==================================================")
+print("======================== UPDATE DATA OF DICTIONARY ========================")
 
 # UPDATE DATA OF DICTIONARY
-  -------------------------
 
 print(d)  # {10: 'apple', 20: 'banana', 30: 'mango', 40: 'orange'}
 d[30] = 'strawberry'
 print(d)  # {10: 'apple', 20: 'banana', 30: 'strawberry', 40: 'orange'}
 
-# If the key is not available in the dictionary, a new entry will be created.
+# IMPORTANT NOTE: If the key is not available in the dictionary, a new entry will be created.
+
 d[60] = 'cashew'
 print(d)  # {10: 'apple', 20: 'banana', 30: 'strawberry', 40: 'orange', 60: 'cashew'}
 
-print("==================================================")
+# d.update(50:"Tea")
+
+print("========================= DELETE DATA FROM DICTIONARY =========================")
 
 # DELETE DATA FROM DICTIONARY
-  ---------------------------
 
 # To delete, we have to use the keyword 'del'
 # This will delete permanently from the dictionary. We can't get back that data.
@@ -80,6 +84,10 @@ print("==================================================")
 del d[10]
 del d[20]
 print(d)  # {30: 'strawberry', 40: 'orange', 60: 'cashew'}
+
+# DELETE ALL DATA FROM DICTIONARY
+d.clear()
+print(d)  # Empty Dictionary
 
 #============================================================================================
 
@@ -103,6 +111,8 @@ d = {10: 'apple', 20: 'banana', 30: 'mango', 40: 'orange'}
    print(d.get(20,"lemon"))  # banana (Key is available)
    print(d.get(80,"lemon"))  # lemon (Key is NOT available)
 
+   # This does not change the items in original dictionary.
+
 3) pop() - will remove the (Key-Value) pair from the dictionary
    print(d)  # {10: 'apple', 20: 'banana', 30: 'mango', 40: 'orange'}
    print(d.pop(20))
@@ -121,6 +131,8 @@ d = {10: 'apple', 20: 'banana', 30: 'mango', 40: 'orange'}
 8) copy() - create duplicate independent  object (CLONING)
             If changes done inside 'd', those changes will not be  reflected inside 'd1' and vice-versa.
 9) update() - add the new (key-value) pairs to the dictionary
+
+10) clear() - It removes all the elements from the dictionary and make it an empty dictionary.
 
 #============================================================================================
 

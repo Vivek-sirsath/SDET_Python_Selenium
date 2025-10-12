@@ -2,10 +2,13 @@
 
 d = {10: 'apple', 20: 'banana', 30: 'mango', 40: 'orange'}
 
+print("======================== RETRIEVE DATA FROM DICTIONARY ========================")
+
 print(d[30])  # mango
+print(d.get(40))   # orange
 # print(d[90])  # KeyError: 90
 
-print("==================================================")
+print("======================== UPDATE DATA OF DICTIONARY ========================")
 
 # UPDATE DATA OF DICTIONARY
 
@@ -13,11 +16,14 @@ print(d)  # {10: 'apple', 20: 'banana', 30: 'mango', 40: 'orange'}
 d[30] = 'strawberry'
 print(d)  # {10: 'apple', 20: 'banana', 30: 'strawberry', 40: 'orange'}
 
-# If the key is not available in the dictionary, a new entry will be created.
+# IMPORTANT NOTE: If the key is not available in the dictionary, a new entry will be created.
+
 d[60] = 'cashew'
 print(d)  # {10: 'apple', 20: 'banana', 30: 'strawberry', 40: 'orange', 60: 'cashew'}
 
-print("==================================================")
+# d.update(50:"Tea")
+
+print("========================= DELETE DATA FROM DICTIONARY =========================")
 
 # DELETE DATA FROM DICTIONARY
 

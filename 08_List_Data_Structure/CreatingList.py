@@ -8,10 +8,10 @@ print(type(empty_list))  # <class 'list'>
 list_1 = ["Madhavi", "London", 25000.15, 9425467527, 25000.15]
 print(list_1)  # ['Madhavi', 'London', 25000.15, 9425467527, 25000.15] - Insertion Order Preserved
 
-# eval() function -  Evaluates the data type
+# # eval() function -  Evaluates the data type
 # print(input("Enter data:"))  # 10
 # var1 = eval(input("Enter data:"))
-# print(type(var1))
+# print(type(var1))   # <class 'int'>
 
 # 10 --> <class 'int'>
 # 10, "Ishita", 50000.12, 26 --> <class 'tuple'>
@@ -51,7 +51,7 @@ print("================ By Slice Operator ================")
 print(list_1[1:3])  # ['London', 25000.15]
 print(list_1[0:4])  # ['Madhavi', 'London', 25000.15, 9425467527]
 print(list_1[2:2])  # []
-print(list_1[-1:-4:-1])
+print(list_1[-1:-4:-1])  # [25000.15, 9425467527, 25000.15]
 
 list_2 = [111,222,333,444,555,666,777,888,999]
 print(list_2[-1:-7:-1])  # [999, 888, 777, 666, 555, 444]

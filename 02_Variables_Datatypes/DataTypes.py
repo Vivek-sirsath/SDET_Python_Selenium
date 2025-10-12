@@ -19,7 +19,7 @@ print(type(xx))
 print(type(yy))
 print(type(zz))
 
-print("=============================================================================")
+print("================ Data Types by indently.io (YouTube) ===============")
 
 # Data Types by indently.io (YouTube)
 
@@ -61,15 +61,15 @@ print(x,y)  # 5 3
 print("=============== Deleting variables ====================")
 del b
 # print(b)  # NameError: name 'b' is not defined
-print("=============================================================================")
+print("================ Defining variables using Type annotation ================")
 
 # Defining variables using Type annotation
 
 name = "Bob"   # Allowed, No need to specify string data type
 age = 'Eleven'  # Editor not giving any warning, Wrong data type inserted
 
-# Editor can give warning by specifying data types with declaration
-# age: int = 'Eleven'  # --> Here editor is giving warning
+# Editor can give warning if we specify data types with declaration
+# age: int = 'Eleven'  # --> Here editor is giving warning (Expected type 'int', got 'str' instead)
 AGE:int = 13   # --> By this way we can not insert wrong data by mistake.
 print(AGE)
 Date:int = True
@@ -95,8 +95,8 @@ from datetime import datetime
 
 # print("This is the current date and time:")
 # print(datetime.now())
-#
-# print("This is the current date time:")
+
+# print("This is the current date time:") # ..... statement changed
 # print(datetime.now())
 
 # To print again we have to copy again. Also, the statement can be changed everytime.

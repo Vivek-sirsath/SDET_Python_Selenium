@@ -49,6 +49,9 @@ print("After swapping :", m ,n)
 
 ################################################################
 # del Keyword :-
+# If we delete anything in Python, it will be permanently deleted.
+# 'del' is an unbind operation.
+
 x = 30
 y = 12
 print(x)
@@ -56,6 +59,11 @@ del x
 #print(x)   # NameError: name 'x' is not defined
 
 # Instead of 'del' we can use 'None' keyword
+# None --> Nothing
+# If we assign 'None' to any variable,
+# a = None  ---> Eligible for garbage collection. (Ready for delete operation)
+# a = None (occupy 16 to 24 bytes of Python memory)
+
 x = 56   # Here x is redefined after deleting
 print(x)
 x = None

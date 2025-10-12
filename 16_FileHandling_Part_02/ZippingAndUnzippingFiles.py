@@ -12,7 +12,7 @@ print("==================================== ZIPPING ============================
 # Create a normal text file with 200 lines. File size will be 4kb
 from zipfile import ZipFile, ZIP_DEFLATED,ZIP_STORED
 with open("abcd.txt","w") as f:
-    f.write("This is test file\n" * 200)
+    f.write("This is first text file\n" * 200)
 
 with open("wxyz.txt","w") as f1:
     f1.write("This is second text file\n" * 200)
@@ -27,7 +27,7 @@ with ZipFile("no_compressed.zip","w",compression=ZIP_STORED) as f:
 # CASE 3:
 # Create a text file with compression using ZipFile class (compression parameter - ZIP_DEFLATED)
 # This will create a zip folder
-# 'compressed.zip' - 1kb  containing files 'abcd.txt' - 4kb and 'wxyz.txt' - 6kb respectively.
+# 'compressed.zip' - 1kb  containing both files 'abcd.txt' - 4kb and 'wxyz.txt' - 6kb respectively.
 with ZipFile("compressed.zip","w",compression=ZIP_DEFLATED) as f:
     f.write("abcd.txt")
     f.write("wxyz.txt")
@@ -42,7 +42,7 @@ print("==================================== UNZIPPING ==========================
 with ZipFile("compressed.zip", "r") as unzip:
     print(unzip.namelist())   # ['abcd.txt', 'wxyz.txt']
     unzip.extractall("Unzipped_Folder")
-    # unzip.extract("abcd.txt","Unzipped_Folder")   # we can extract specific file.
+    # unzip.extract("abcd.txt","Unzipped_Folder")   # we can extract specific file also.
 
 
 

@@ -1,6 +1,10 @@
+# TYPE CASTING
+# Converting from one data type to another data type
+# Functions to convert any data type --> int(), float(), complex(), bool(), str()
+
 a = 10
 print(type(a))  # <class 'int'>
-b = str(a)
+b = str(a)  # passing a as an argument.
 print(type(b))  # <class 'str'>
 
 print("--------------------")
