@@ -1,10 +1,10 @@
 # 1) match()
 
 # - Checks if a string starts with a pattern. Returns a matching object if found, otherwise None.
-# - Matches only start of a string.
+# - Only matches start of a string.
 
 print("======== Check if a filename starts with a letter (Either lowercase OR uppercase) ========")
-import re
+import re  # re - regular expression module
 
 # Case 1 (Valid Filename)
 
